@@ -1,5 +1,11 @@
 # Conway's Game of Life
 
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Repo Size](https://img.shields.io/github/repo-size/hrosicka/game-of-life)
+![Last Commit](https://img.shields.io/github/last-commit/hrosicka/game-of-life)
+![Issues](https://img.shields.io/github/issues/hrosicka/game-of-life)
+![Stars](https://img.shields.io/github/stars/hrosicka/game-of-life)
+
 - Conway's Game of Life is a cellular automaton devised by the British mathematician John Horton Conway in 1970.
 - It isn't a game in the traditional sense, as there are no players. Instead, it's a simulation governed by a simple set of rules.
 ---
