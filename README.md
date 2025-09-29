@@ -1,4 +1,4 @@
-# Game of Life — Welcome to the World of Cellular Automata
+# Game of Life — Cellular Automata Playground
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![Repo Size](https://img.shields.io/github/repo-size/hrosicka/game-of-life)
@@ -6,77 +6,107 @@
 ![Issues](https://img.shields.io/github/issues/hrosicka/game-of-life)
 ![Stars](https://img.shields.io/github/stars/hrosicka/game-of-life)
 
-Welcome to this fun and interactive project — an implementation of the famous **Conway's Game of Life** in C! This repository allows you to dive into the fascinating world of cellular automata and observe how complex patterns emerge from simple rules.
+Welcome! This repository contains several interactive C implementations of **Conway’s Game of Life**. Study, experiment, and enjoy the fascinating emergence of complex behavior from simple rules.
 
 ---
 
 ## 🧬 What is the Game of Life?
 
-[Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) is a simulation on a 2D grid, where each cell can be alive or dead. In each generation, the state of every cell is determined by a few simple rules based on the number of living neighbors. There are no players — just rules, and surprisingly rich behavior.
+[Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) is a cellular automaton played on a grid of cells, each of which is either alive or dead. At each time step ("generation"), cells update state according to their neighbors:
 
-**What you'll find in this repository:**
-- Simulations of basic patterns (toad, glider, etc.)
-- Demonstrations of more advanced structures like the **Gosper’s Glider Gun**
-- Terminal animation (for Windows) and an easy way to experiment with your own patterns
+- **Survival:** A live cell with 2 or 3 live neighbors survives.
+- **Death:** A live cell with fewer than 2 or more than 3 live neighbors dies.
+- **Birth:** A dead cell with exactly 3 live neighbors becomes alive.
 
----
-
-## ⚙️ How does it work?
-
-- Each cell has eight neighbors.
-- On each step (generation), the following rules are applied to every cell:
-  1. **Survival:** Any live cell with two or three live neighbors survives.
-  2. **Death:** Any live cell with fewer than two or more than three live neighbors dies (underpopulation or overpopulation).
-  3. **Birth:** Any dead cell with exactly three live neighbors becomes a live cell.
+No players, just rules—and surprisingly rich behavior.
 
 ---
 
-## 🚀 How to run
+## 🧩 Implemented Patterns & Features
 
-> **Note:** The program is written in C and intended for Windows (uses `windows.h`).
+This repository provides ready-to-run simulations for several classic Game of Life patterns:
 
-### Basic Life (oscillators, toad, etc.)
+- **Blinker:** A simple period-2 oscillator.
+- **Toad:** Another period-2 oscillator.
+- **Glider:** The famous moving pattern.
+- **Lightweight Spaceship (LWSS):** A mobile pattern that travels diagonally.
+- **Gosper Glider Gun:** Emits endless gliders—demonstrating infinite growth.
+- **Pulsar:** A period-3 oscillator.
+- **Custom Patterns:** Easily experiment with your own initial states by editing the source.
+
+All simulations feature animated terminal output (for Windows), wrap-around grid edges, and are well-commented for learning and modification.
+
+---
+
+## 🚀 How to Run
+
+> **Note:** All programs are written in C for Windows (require `windows.h`). To compile and run, use GCC:
+
+### Blinker Oscillator
 ```bash
-gcc game-of-life.c -o game-of-life
-./game-of-life
+gcc game-of-life-blinker.c -o game-of-life-blinker
+./game-of-life-blinker
 ```
 
-### Glider patterns
+### Toad Oscillator
+```bash
+gcc game-of-life-toad.c -o game-of-life-toad
+./game-of-life-toad
+```
+
+### Glider
 ```bash
 gcc game-of-life-glider.c -o game-of-life-glider
 ./game-of-life-glider
 ```
 
-### Glider Gun (infinite stream of gliders!)
+### Lightweight Spaceship (LWSS)
+```bash
+gcc game-of-life-lwss.c -o game-of-life-lwss
+./game-of-life-lwss
+```
+
+### Gosper Glider Gun
 ```bash
 gcc game-of-life-gun.c -o game-of-life-gun -lm
 ./game-of-life-gun
 ```
 
----
-
-## 🧩 Project Structure
-
-- **game-of-life.c** — Basic implementation with several simple patterns
-- **game-of-life-glider.c** — Simulation of the legendary "glider" pattern
-- **game-of-life-gun.c** — Simulation of the "Gosper’s Glider Gun" which generates endless gliders
-- **LICENSE** — MIT license, feel free to use and improve!
+### Pulsar Oscillator
+```bash
+gcc game-of-life-pulsar.c -o game-of-life-pulsar
+./game-of-life-pulsar
+```
 
 ---
 
-## ✨ Why is this interesting?
+## 📁 Project Structure
 
-- Witness how complex patterns and behaviors arise from simple rules
-- Perfect for demonstrating programming, algorithms, and automata theory
-- Well-commented source code, ideal for self-study and experiments
+- **game-of-life-blinker.c** — Blinker oscillator
+- **game-of-life-toad.c** — Toad oscillator
+- **game-of-life-glider.c** — Glider
+- **game-of-life-lwss.c** — Lightweight Spaceship
+- **game-of-life-gun.c** — Gosper Glider Gun
+- **game-of-life-pulsar.c** — Pulsar oscillator
+- **LICENSE** — MIT License
 
 ---
 
-## 💡 Ideas for improvement
+## ✨ Why Use This Project?
 
-- Add support for other platforms (Linux/macOS)
-- Allow loading custom initial states from a text file
-- Build a graphical interface (e.g., with SDL or another graphics library)
+- Visualize how simple rules lead to complex, emergent behavior.
+- Study classic cellular automata patterns.
+- Source code is beginner-friendly and well-commented for self-study.
+- Quick experimentation: modify source to try your own patterns.
+
+---
+
+## 💡 Possible Improvements
+
+- Add support for Linux/macOS (replace `windows.h` functionality).
+- Load custom starting states from text files.
+- Build a graphical interface (e.g., with SDL).
+- More patterns and user interaction.
 
 ---
 
@@ -88,4 +118,4 @@ Repository maintained by [Hanka Robovska](https://github.com/hrosicka).
 
 ## 📄 License
 
-This project is released under the MIT License — use it as you wish!
+Released under the MIT License—use, modify, and share freely!
