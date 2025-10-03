@@ -32,6 +32,7 @@ This repository provides ready-to-run simulations for several classic Game of Li
 - **Lightweight Spaceship (LWSS):** A mobile pattern that travels diagonally.
 - **Gosper Glider Gun:** Emits endless gliders—demonstrating infinite growth.
 - **Pulsar:** A period-3 oscillator.
+- **Beacon:** One of the best-known and most frequently occurring simple patterns. Beacon alternates between only two different shapes.
 - **Custom Patterns:** Easily experiment with your own initial states by editing the source.
 
 All simulations feature animated terminal output (for Windows), wrap-around grid edges, and are well-commented for learning and modification.
@@ -78,6 +79,12 @@ gcc game-of-life-pulsar.c -o game-of-life-pulsar
 ./game-of-life-pulsar
 ```
 
+## Beacon
+```bash
+ gcc game-of-life-beacon.c -o game-of-life-beacon
+./game-of-life-beacon
+```
+
 ---
 
 ## 📁 Project Structure
@@ -88,6 +95,7 @@ gcc game-of-life-pulsar.c -o game-of-life-pulsar
 - **game-of-life-lwss.c** — Lightweight Spaceship
 - **game-of-life-gun.c** — Gosper Glider Gun
 - **game-of-life-pulsar.c** — Pulsar oscillator
+- **game-of-life-beacon.c** - Beacon
 - **LICENSE** — MIT License
 
 ---
