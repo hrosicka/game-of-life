@@ -17,7 +17,7 @@ Welcome! This repository contains several interactive C implementations of **Con
   * [Blinker Oscillator](#blinker-oscillator)
   * [Toad Oscillator](#toad-oscillator)
   * [Glider](#glider)
- 
+  * [Lightweight Spaceship (LWSS)](#lightweight-spaceship-lwss)
 
 
 Lightweight Spaceship (LWSS)
