@@ -10,6 +10,26 @@ Welcome! This repository contains several interactive C implementations of **Con
 
 ---
 
+## 🧭 Table of Contents
+* [🧬 What is the Game of Life?](#-what-is-the-game-of-life)
+* [🧩 Implemented Patterns & Features]((#pattern-link))
+* [🚀 How to Run](#-how-to-run)
+  * [Blinker Oscillator](#blinker-oscillator)
+ 
+Toad Oscillator
+Glider
+Lightweight Spaceship (LWSS)
+Gosper Glider Gun
+Pulsar Oscillator
+Beacon
+📁 Project Structure
+✨ Why Use This Project?
+💡 Possible Improvements
+👩‍💻 Author
+📄 License
+
+---
+
 ## 🧬 What is the Game of Life?
 
 [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) is a cellular automaton played on a grid of cells, each of which is either alive or dead. At each time step ("generation"), cells update state according to their neighbors:
@@ -22,6 +42,7 @@ No players, just rules—and surprisingly rich behavior.
 
 ---
 
+<a name="pattern-link"></a>
 ## 🧩 Implemented Patterns & Features
 
 This repository provides ready-to-run simulations for several classic Game of Life patterns:
