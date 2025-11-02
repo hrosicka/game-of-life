@@ -18,10 +18,9 @@ Welcome! This repository contains several interactive C implementations of **Con
   * [Toad Oscillator](#toad-oscillator)
   * [Glider](#glider)
   * [Lightweight Spaceship (LWSS)](#lightweight-spaceship-lwss)
+  * [Gosper Glider Gun](#gosper-glider-gun)
 
 
-Lightweight Spaceship (LWSS)
-Gosper Glider Gun
 Pulsar Oscillator
 Beacon
 📁 Project Structure
