@@ -15,9 +15,11 @@ Welcome! This repository contains several interactive C implementations of **Con
 * [🧩 Implemented Patterns & Features]((#pattern-link))
 * [🚀 How to Run](#-how-to-run)
   * [Blinker Oscillator](#blinker-oscillator)
+  * [Toad Oscillator](#toad-oscillator)
+  * [Glider](#glider)
  
-Toad Oscillator
-Glider
+
+
 Lightweight Spaceship (LWSS)
 Gosper Glider Gun
 Pulsar Oscillator
