@@ -1,3 +1,6 @@
+[English](#english) | [Čeština](#čeština)
+
+<a name="english"></a>
 # Game of Life — Cellular Automata Playground
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
@@ -19,15 +22,13 @@ Welcome! This repository contains several interactive C implementations of **Con
   * [Glider](#glider)
   * [Lightweight Spaceship (LWSS)](#lightweight-spaceship-lwss)
   * [Gosper Glider Gun](#gosper-glider-gun)
-
-
-Pulsar Oscillator
-Beacon
-📁 Project Structure
-✨ Why Use This Project?
-💡 Possible Improvements
-👩‍💻 Author
-📄 License
+  * [Pulsar Oscillator](#pulsar-oscillator)
+  * [Beacon](#beacon)
+* [📁 Project Structure](#-project-structure)
+* [✨ Why Use This Project?](#-why-use-this-project)
+* [💡 Possible Improvements](#-possible-improvements)
+* [👩‍💻 Author](#-author)
+* [📄 License](#-license)
 
 ---
 
@@ -149,3 +150,74 @@ Repository maintained by [Hanka Robovska](https://github.com/hrosicka).
 ## 📄 License
 
 Released under the MIT License—use, modify, and share freely!
+
+---
+---
+
+<a name="čeština"></a>
+---
+
+# 🇨🇿 Game of Life — hřiště pro celulární automaty
+
+![Licence: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Velikost repozitáře](https://img.shields.io/github/repo-size/hrosicka/game-of-life)
+![Poslední commit](https://img.shields.io/github/last-commit/hrosicka/game-of-life)
+![Issues](https://img.shields.io/github/issues/hrosicka/game-of-life)
+![Stars](https://img.shields.io/github/stars/hrosicka/game-of-life)
+
+Vítejte! Tento repozitář obsahuje několik interaktivních implementací **Conwayovy hry života** (Game of Life) v jazyce C. Studujte, experimentujte a užijte si fascinující proces, kde se z jednoduchých pravidel rodí komplexní chování.
+
+---
+
+## 🧭 Obsah
+* [🧬 Co je to Game of Life?](#-co-je-to-game-of-life)
+* [🧩 Implementované vzory a funkce](#-implementované-vzory-a-funkce)
+* [🚀 Jak spustit](#-jak-spustit)
+* [📁 Struktura projektu](#-struktura-projektu)
+* [✨ Proč tento projekt zkusit?](#-proč-tento-projekt-zkusit)
+* [💡 Možná vylepšení](#-možná-vylepšení)
+* [👩‍💻 Autorka](#-autorka)
+* [📄 Licence](#-licence)
+
+---
+
+## 🧬 Co je to Game of Life?
+<a name="-co-je-to-game-of-life"></a>
+
+[Conwayova hra života](https://cs.wikipedia.org/wiki/Hra_%C5%BEivota) je celulární automat odehrávající se na mřížce buněk, z nichž každá je buď živá, nebo mrtvá. V každém časovém kroku („generaci“) buňky mění svůj stav podle svých sousedů:
+
+- **Přežití:** Živá buňka se 2 nebo 3 živými sousedy přežívá.
+- **Smrt:** Živá buňka s méně než 2 nebo více než 3 živými sousedy umírá.
+- **Zrození:** Mrtvá buňka s přesně 3 živými sousedy ožívá.
+
+Žádní hráči, jen pravidla – a překvapivě bohaté výsledky.
+
+---
+
+## 🧩 Implementované vzory a funkce
+<a name="-implementované-vzory-a-funkce"></a>
+
+Tento repozitář obsahuje připravené simulace pro několik klasických vzorů:
+
+- **Blinker (Blikač):** Jednoduchý oscilátor s periodou 2.
+- **Toad (Ropucha):** Další oscilátor s periodou 2.
+- **Glider (Kluzák):** Slavný pohybující se vzor.
+- **Lightweight Spaceship (LWSS):** Mobilní vzor, který se pohybuje horizontálně.
+- **Gosper Glider Gun:** „Dělo“, které nekonečně střílí kluzáky – ukázka nekonečného růstu.
+- **Pulsar:** Oscilátor s periodou 3.
+- **Beacon (Maják):** Jeden z nejznámějších jednoduchých vzorů, který střídá dva tvary.
+- **Vlastní vzory:** Upravením zdrojového kódu můžete snadno experimentovat s vlastními stavy.
+
+Všechny simulace obsahují animovaný výstup v terminálu (pro Windows), cyklické okraje mřížky a jsou podrobně komentované pro snadné učení.
+
+---
+
+## 🚀 Jak spustit
+<a name="-jak-spustit"></a>
+
+> **Poznámka:** Programy jsou napsány v C pro Windows (vyžadují `windows.h`). Ke kompilaci použijte GCC:
+
+### Blinker Oscillator
+```bash
+gcc game-of-life-blinker.c -o game-of-life-blinker
+./game-of-life-blinker
