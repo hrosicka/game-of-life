@@ -157,7 +157,7 @@ Released under the MIT License—use, modify, and share freely!
 <a name="čeština"></a>
 ---
 
-# 🇨🇿 Game of Life — hřiště pro celulární automaty
+# Hra života — hřiště pro celulární automaty
 
 ![Licence: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![Velikost repozitáře](https://img.shields.io/github/repo-size/hrosicka/game-of-life)
